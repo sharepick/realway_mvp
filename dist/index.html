@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Realway Workspace · WhatsApp 运营</title>
+<link rel="stylesheet" href="style.css">
+<script src="conversation-analysis.js" defer></script>
+<script src="team-report.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><b>R</b><div>Realway<small>OPERATIONS WORKSPACE</small></div></div>
+  <div class="workspace"><span>🇮🇩</span><div><strong>Realway Indonesia</strong><small>印尼运营试点</small></div></div>
+  <nav aria-label="主导航" id="nav"></nav>
+  <div class="sidebar-foot"><label for="role">演示身份</label><select id="role"></select><small>角色切换用于模拟数据权限</small></div>
+</aside>
+<main>
+<header class="top"><span>运营中心 <span class="muted">/</span> <strong id="crumb"></strong></span><span class="mode"><i></i> 模拟模式 · WhatsApp 未连接</span></header>
+<div class="wrap">
+<div class="heading"><div><h1 id="title"></h1><p id="subtitle"></p></div><button class="secondary" id="action" hidden></button></div>
+<div id="view"></div>
+</div>
+</main>
+<dialog id="dialog"><form id="form"><h2 id="dialogTitle"></h2><div id="fields"></div><div class="actions"><button type="button" class="secondary" id="cancel">取消</button><button class="primary">保存</button></div></form></dialog>
+<div id="toast" role="status"></div>
+</body>
+</html>
